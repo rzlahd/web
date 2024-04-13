@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+function makeid(length) {
+    let hasil = '';
+    const Chr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ@#$%abcdefghijklmnopqrstuvwxy!^&*()z0123456789@#$%!^&*()_+{}:<>?;[]-="';
+    const ukuranChr = Chr.length;
+    let hitung = 0;
+    while (hitung < length) {
+      hasil += Chr.charAt(Math.floor(Math.random() * ukuranChr));
+      hitung += 1;
+    }
+    return hasil;
+}
+
+console.log(makeid(30));
+</script>
+</html>
